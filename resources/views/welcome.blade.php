@@ -34,10 +34,10 @@
                         @auth
                             <a href="{{ url('/home') }}" class="btn btn-primary btn-lg px-4 me-md-2">Home</a>
                         @else
-                            <a href="{{ route('login') }}" class="btn btn-primary btn-lg px-4 me-md-2">Se connecter</a>
+                            <a href="{{ route('login') }}" class="btn btn-primary btn-lg px-4 me-md-2">Login</a>
                             @if(Route::has('register'))
                                 <a href="{{ route('register') }}"
-                                   class="btn btn-outline-secondary btn-lg px-4">Nouveau</a>
+                                   class="btn btn-outline-secondary btn-lg px-4">Register</a>
                             @endif
                         @endauth
                     @endif
