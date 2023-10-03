@@ -24,7 +24,7 @@
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">
-                    <span class="text-primary">WeChat</span>
+                    <span class="text-primary">LetChat</span>
                 </h1>
                 <p class="lead">
                 LetChat est une application de chat simple qui vous permet de discuter avec vos amis et votre famille en temps réel.
@@ -34,10 +34,10 @@
                         @auth
                             <a href="{{ url('/home') }}" class="btn btn-primary btn-lg px-4 me-md-2">Home</a>
                         @else
-                            <a href="{{ route('login') }}" class="btn btn-primary btn-lg px-4 me-md-2">Log in</a>
+                            <a href="{{ route('login') }}" class="btn btn-primary btn-lg px-4 me-md-2">Se connecter</a>
                             @if(Route::has('register'))
                                 <a href="{{ route('register') }}"
-                                   class="btn btn-outline-secondary btn-lg px-4">Register</a>
+                                   class="btn btn-outline-secondary btn-lg px-4">Nouveau</a>
                             @endif
                         @endauth
                     @endif

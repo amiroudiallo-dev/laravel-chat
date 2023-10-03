@@ -6,7 +6,6 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header bg-white" style="font-weight: bold; font-size: 18px"><span class="text-primary"></span> LetChat</div>
-
                     <div class="card-body" id="app">
                         <chat-app :user="{{ auth()->user() }}"></chat-app>
                     </div>
